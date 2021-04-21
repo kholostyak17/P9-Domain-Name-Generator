@@ -1,17 +1,17 @@
-const pronoun = ['the', 'our'];
-const adj = ['great', 'big'];
-const noun = ['jogger', 'racoon'];
-const doms = ['.ces', '.org', '.net'];
+const verbo = ['compra', 'regala', 'comparte'];
+const pronombre = ['tus', 'mis'];
+const sustantivo = ['cancion', 'pec', 'video'];
+const dominios = ['.es', '.os'];
 let arrayDominios = [];
 
 window.onload = () => {
-    for (let index1 = 0; index1 < pronoun.length; index1++) {
-        for (let index2 = 0; index2 < adj.length; index2++) {
-            for (let index3 = 0; index3 < noun.length; index3++) {
-                for (let index4 = 0; index4 < doms.length; index4++) {
+    for (let index1 = 0; index1 < verbo.length; index1++) {
+        for (let index2 = 0; index2 < pronombre.length; index2++) {
+            for (let index3 = 0; index3 < sustantivo.length; index3++) {
+                for (let index4 = 0; index4 < dominios.length; index4++) {
                     let dominioCompleto = "";
-                    console.log(dominioCompleto.concat(pronoun[index1], adj[index2], noun[index3], doms[index4]));
-                    arrayDominios.push(dominioCompleto.concat(pronoun[index1], adj[index2], noun[index3], doms[index4]));
+                    console.log(dominioCompleto.concat(verbo[index1], pronombre[index2], sustantivo[index3], dominios[index4]));
+                    arrayDominios.push(dominioCompleto.concat(verbo[index1], pronombre[index2], sustantivo[index3], dominios[index4]));
                 }
             }
         }
