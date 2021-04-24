@@ -13,9 +13,11 @@ window.onload = () => {
                     let finalword = word3[index3].concat(domains[index4]);
                     let verb = word1[index1].concat(word2[index2]);
                     if (finalword == 'profesor.es' || finalword == 'dulc.es' || finalword == 'pec.es' || finalword == 'inter.net' || finalword == 'calid.ad') {
-                        if (verb == 'aprendecon'||verb =='comparte')
-                        console.log(dominioCompleto.concat(word1[index1], word2[index2], word3[index3], domains[index4]));
-                        arrayWebsite.push(dominioCompleto.concat(word1[index1], word2[index2], word3[index3], domains[index4]));
+                        if (verb == 'aprendecon' || verb == 'comparte') {
+                            console.log(dominioCompleto.concat(word1[index1], word2[index2], word3[index3], domains[index4]));
+                            arrayWebsite.push(dominioCompleto.concat(word1[index1], word2[index2], word3[index3], domains[index4]));
+                        }
+
                     }
 
                 }
